@@ -1,0 +1,14 @@
+<form method="POST" action="/case/">
+    {% csrf_token%}
+<div style="text-align:center;"><input class="input" type="text" placeholder="country name" name="country">
+    <button type="submit">search</button>
+</form>
+<pre>
+
+
+{{ weather.country}}
+{{ weather.confirmed}}
+{{ weather.recovered}}
+{{ weather.deaths}}
+{{ weather.last}}
+</pre>
